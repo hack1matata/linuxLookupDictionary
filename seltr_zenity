@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+zenity --timeout=50 --width=600 --height=200 --info --title="$(xsel -o)" --text="$(wget -U "Mozilla/5.0" -qO - "http://api.pearson.com/v2/dictionaries/ldoce5/entries?headword=$(xsel -o)&search=$(xsel -o)" | grep -Po '("definition"|"ipa"):.*?[^\\]",' | sed 's/"].*//g' | sed 's/"}.*/=====/g' | sed 's/",.*/=====/g' | sed 's/.*\["/\\- /g' | sed 's/.*:"/=====/g')"
+

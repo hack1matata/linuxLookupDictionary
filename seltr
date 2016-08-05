@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+notify-send -t 20000 -u low -i info "$(xsel -o)" "$(wget -U "Mozilla/5.0" -qO - "http://api.pearson.com/v2/dictionaries/ldoce5/entries?search=$(xsel -o)" | grep -Po '"definition":.*?[^\\]",' | sed 's/"].*//g' | sed 's/.*\["/\\-/g' | sed -e 's/.\{50\}/&-\n/g' )"
+

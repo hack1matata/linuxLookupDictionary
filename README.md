@@ -51,5 +51,5 @@ xdg-open https://dexonline.ro/definitie/$(xsel -o)
 english_dict:
 xdg-open https://translate.google.com/#en/ro/$(xsel -o)
 
-It is possible to use it with any configurations,  just take the url in the english_dict to mathc the languages you like: 
+It is possible to use it with other dictionaries,  just take the url from the english_dict and changed it to match the languages you like: 
 https://translate.google.com/#fr/no/test -- this is French -> Norwegian

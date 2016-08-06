@@ -31,6 +31,11 @@ zenity --timeout=50 --width=600 --height=200 --info --title="$(xsel -o)" --text=
 Personaly I recomend using zenity it is much better and easier to configure. I found it difficult to configure notify-send dialog to print more than 6 lines. This is why I started to use zenity.
 
 #***********************************************************
+ It does not display the translation into a different language but it prints the definition of the selected words one might want to understand better. 
+
+ It is also posible to translate to different languages but for this you may need to create an account API that might offer this.
+
+#***********************************************************
 # Solution 2
 While I was writting this wiki a new sollution struck into my mind. If it is possible to open a browser on a spefiic URL then it is possible to use any dictionary be that free or non free. 
 
@@ -48,8 +53,3 @@ xdg-open https://translate.google.com/#en/ro/$(xsel -o)
 
 It is possible to use it with any configurations,  just take the url in the english_dict to mathc the languages you like: 
 https://translate.google.com/#fr/no/test -- this is French -> Norwegian
-
-#***********************************************************
- It does not display the translation into a different language but it prints the definition of the selected words one might want to understand better. 
-
- It is also posible to translate to different languages but for this you may need to create an account API that might offer this.
